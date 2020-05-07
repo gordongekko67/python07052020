@@ -1,0 +1,91 @@
+struct  CreatePullPoint  { 
+         ns5:CreatePullPoint(_value_1:;
+         ANY[],;
+         _attr_1:;
+         {});
+};
+
+struct  CreatePullPointResponse  { 
+         ns5:CreatePullPointResponse(PullPoint:;
+         ns6:EndpointReferenceType,;
+         _value_1:;
+         ANY[],;
+         _attr_1:;
+         {});
+};
+
+struct  DestroyPullPoint  { 
+         ns5:DestroyPullPoint(_value_1:;
+         ANY[],;
+         _attr_1:;
+         {});
+};
+
+struct  DestroyPullPointResponse  { 
+         ns5:DestroyPullPointResponse(_value_1:;
+         ANY[],;
+         _attr_1:;
+         {});
+};
+
+struct  GetMessages  { 
+         ns5:GetMessages(MaximumNumber:;
+         xsd:nonNegativeInteger,;
+         _value_1:;
+         ANY[],;
+         _attr_1:;
+         {});
+};
+
+struct  GetMessagesResponse  { 
+         ns5:GetMessagesResponse(NotificationMessage:;
+         ns5:NotificationMessageHolderType[],;
+         _value_1:;
+         ANY[],;
+         _attr_1:;
+         {});
+};
+
+struct  Subscribe  { 
+         ns5:Subscribe(ConsumerReference:;
+         ns6:EndpointReferenceType,;
+         Filter:;
+         ns5:FilterType,;
+         InitialTerminationTime:;
+         ,;
+         SubscriptionPolicy:;
+         {_value_1:;
+         ANY[]},;
+         _value_1:;
+         ANY[]);
+};
+
+struct  GetSystemUrisResponse  { 
+         ns0:GetSystemUrisResponse(SystemLogUris:;
+         ns1:SystemLogUriList,;
+         SupportInfoUri:;
+         xsd:anyURI,;
+         SystemBackupUri:;
+         xsd:anyURI,;
+         Extension:;
+         {_value_1:;
+         ANY[]});
+};
+
+struct  Message  { 
+         ns1:Message(Source:;
+         ns1:ItemList,;
+         Key:;
+         ns1:ItemList,;
+         Data:;
+         ns1:ItemList,;
+         Extension:;
+         ns1:MessageExtension,;
+         UtcTime:;
+         xsd:dateTime,;
+         PropertyOperation:;
+         ns1:PropertyOperation,;
+         _attr_1:;
+         {});
+};
+
